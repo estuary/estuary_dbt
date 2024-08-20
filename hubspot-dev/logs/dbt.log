@@ -1,0 +1,50 @@
+[0m14:58:54.455210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111478500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112304f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112304c80>]}
+
+
+============================== 14:58:54.457552 | 7dbd4fff-c255-4ae4-b312-a33126922795 ==============================
+[0m14:58:54.457552 [info ] [MainThread]: Running with dbt=1.8.5
+[0m14:58:54.457816 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/danielpalma/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m14:59:17.692139 [debug] [MainThread]: Starter project path: /Users/danielpalma/Work/estuary_dbt/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:59:17.699577 [info ] [MainThread]: 
+Your new dbt project "estuary_hubspot_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:59:17.700427 [info ] [MainThread]: Setting up your profile.
+[0m15:01:54.357120 [info ] [MainThread]: Profile estuary_hubspot_dbt written to /Users/danielpalma/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:01:54.407059 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 179.98265, "process_user_time": 1.012076, "process_kernel_time": 0.273336, "process_mem_max_rss": "178176000", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:01:54.407578 [debug] [MainThread]: Command `dbt init` succeeded at 15:01:54.407508 after 179.98 seconds
+[0m15:01:54.407944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c0a120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a6e0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11608d700>]}
+[0m15:01:54.408230 [debug] [MainThread]: Flushing usage events
+[0m15:02:00.129719 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:02:02.945895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1027a9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104081250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104080f80>]}
+
+
+============================== 15:02:02.948076 | 9ffdfba1-d79d-496e-a63a-1d75a667929e ==============================
+[0m15:02:02.948076 [info ] [MainThread]: Running with dbt=1.8.5
+[0m15:02:02.948333 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/danielpalma/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:02:02.954996 [info ] [MainThread]: dbt version: 1.8.5
+[0m15:02:02.955124 [info ] [MainThread]: python version: 3.12.2
+[0m15:02:02.955228 [info ] [MainThread]: python path: /Users/danielpalma/Work/estuary_dbt/.venv/bin/python
+[0m15:02:02.955329 [info ] [MainThread]: os info: macOS-14.4.1-arm64-arm-64bit
+[0m15:02:03.443604 [info ] [MainThread]: Using profiles dir at /Users/danielpalma/.dbt
+[0m15:02:03.443855 [info ] [MainThread]: Using profiles.yml file at /Users/danielpalma/.dbt/profiles.yml
+[0m15:02:03.443976 [info ] [MainThread]: Using dbt_project.yml file at /Users/danielpalma/Work/estuary_dbt/hubspot-dev/dbt_project.yml
+[0m15:02:03.444119 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m15:02:03.444936 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.52420884, "process_user_time": 0.736884, "process_kernel_time": 0.134535, "process_mem_max_rss": "181387264", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:02:03.445135 [debug] [MainThread]: Command `dbt debug` failed at 15:02:03.445095 after 0.52 seconds
+[0m15:02:03.445280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1027a9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c36930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ee65d0>]}
+[0m15:02:03.445437 [debug] [MainThread]: Flushing usage events
