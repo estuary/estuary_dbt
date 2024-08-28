@@ -63,6 +63,12 @@ def update_column_matching():
 
 
 if __name__ == "__main__":
+
+    # Create output directories
     setup()
+
+    # Run table fuzzy matching
     update_table_matching()
+
+    # Run column fuzzy matching
     update_column_matching()
