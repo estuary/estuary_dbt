@@ -4,7 +4,7 @@ dbt_packages/
 logs/
 .venv
 .env
-docs/metadata/output
+python_scripting/output/
 .vscode/
 
 # Byte-compiled / optimized / DLL files
