@@ -105,6 +105,8 @@ def write_to_output(estuary_only, fivetran_only, exact_matches, fuzzy_matching_d
         for table in exact_matches:
             writer.writerow([table])
 
+    fuzzy_matching_df.to_csv(os.path.join(csv_output_dir, 'fuzzy_matches.csv'), index=False)
+
     # Write fuzzy_matching_df to CSV
     # Filter fuzzy_matching_df based on similarity_score
     filtered_fuzzy_df = fuzzy_matching_df[fuzzy_matching_df['similarity_score'] >= 80]
